@@ -27,6 +27,10 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+  z-index: 7000;
 }
 .navigation {
   display: flex;
@@ -45,6 +49,7 @@ p {
   background: url(../images/hero.png);
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed;
   height: calc(100vh - 73px);
   display: flex;
   flex-direction: column;
