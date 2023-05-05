@@ -517,6 +517,10 @@ p:not(:last-of-type) {
     padding-left: 124px;
   }
 }
+.contact-us .contents .text a {
+  color: #ffffff;
+  text-decoration: none;
+}
 .contact-us .contents .text .address,
 .contact-us .contents .text .phones,
 .contact-us .contents .text .whatsapp,
