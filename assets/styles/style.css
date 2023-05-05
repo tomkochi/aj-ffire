@@ -801,3 +801,9 @@ footer .subscribe form button {
   overflow: hidden;
   height: 0;
 }
+
+.hidden {
+  position: fixed;
+  left: -2000px;
+  top: -2000px;
+}
