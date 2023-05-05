@@ -217,27 +217,45 @@ p:not(:last-of-type) {
 }
 
 .specialities {
-  margin: 0 88px 0 88px;
-  gap: 48px;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 70px;
+  flex-direction: column;
 }
 @media (min-width: 992px) {
+  .specialities {
+    margin: 0 88px 0 88px;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 48px;
+    margin-bottom: 70px;
+  }
 }
 .specialities img {
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .specialities img {
+    border-radius: 10px;
+    width: auto;
+  }
 }
 .specialities .right {
   background: #ffffff;
-  border-radius: 10px;
-  padding: 43px 55px;
-  margin-top: 22px;
+  border-radius: 0 0 10px 10px;
   position: relative;
+  margin-top: -3px;
+  padding: 30px;
+}
+@media (min-width: 992px) {
+  .specialities .right {
+    padding: 43px 55px;
+    margin-top: 22px;
+    border-radius: 10px;
+  }
 }
 .specialities .right:before {
   content: "";
-  display: block;
+  display: none;
   width: 100%;
   height: 100%;
   background: #2e3d6a;
@@ -247,19 +265,36 @@ p:not(:last-of-type) {
   border-radius: 10px;
   z-index: -1;
 }
+@media (min-width: 992px) {
+  .specialities .right:before {
+    display: block;
+  }
+}
 
 .our-products {
-  margin: 0 88px 0 88px;
-  display: none;
+  margin: 70px 0;
 }
+@media (min-width: 992px) {
+  .our-products {
+    margin: 0 88px 0 88px;
+  }
+}
+
 .our-products p {
   max-width: 816px;
   margin-bottom: 54px;
 }
 .product-listing {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 17px;
+}
+@media (min-width: 992px) {
+  .product-listing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .product-listing .product {
   background: #222430;
@@ -268,14 +303,20 @@ p:not(:last-of-type) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 23px;
 }
 .product-listing .product .image {
   background: #ffffff;
-  width: 163px;
-  height: 163px;
   border-radius: 50%;
   overflow: hidden;
+  width: 30vw;
+}
+@media (min-width: 992px) {
+  .product-listing .product .image {
+    width: 163px;
+    height: 163px;
+  }
 }
 .product-listing .product .image img {
   width: 100%;
@@ -296,7 +337,6 @@ p:not(:last-of-type) {
   background: #ffffff;
   border-radius: 10px;
   margin-top: -87px;
-  display: none;
 }
 .our-services .text {
 }
