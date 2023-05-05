@@ -461,7 +461,7 @@ p:not(:last-of-type) {
 .contact-us {
   background: #ffffff;
   border-radius: 10px;
-  padding: 30px;
+  /* padding: 30px; */
 }
 @media (min-width: 992px) {
   .contact-us {
@@ -470,7 +470,13 @@ p:not(:last-of-type) {
   }
 }
 .contact-us h4 {
-  margin-bottom: 76px;
+  padding: 32px;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .contact-us h4 {
+    margin-bottom: 76px;
+  }
 }
 .contact-us .contents {
   display: grid;
@@ -499,7 +505,7 @@ p:not(:last-of-type) {
   line-height: 1.5;
   color: #ffffff;
   padding: 20px 30px;
-  padding-left: 45px;
+  padding-left: 60px;
 }
 @media (min-width: 992px) {
   .contact-us .contents .text {
