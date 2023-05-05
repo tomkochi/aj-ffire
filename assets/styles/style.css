@@ -475,6 +475,7 @@ p:not(:last-of-type) {
 }
 @media (min-width: 992px) {
   .contact-us h4 {
+    padding: 0;
     margin-bottom: 76px;
   }
 }
@@ -783,4 +784,20 @@ footer .subscribe form button {
   font-weight: 600;
   font-size: 14px;
   color: #ffffff;
+}
+
+#submit-message {
+  position: fixed;
+  right: 16px;
+  bottom: -32px;
+  background: #c2c2c2;
+  box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  padding: 7px 15px;
+  border-radius: 4px 4px 0 0;
+  color: #262626;
+
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+  height: 0;
 }
